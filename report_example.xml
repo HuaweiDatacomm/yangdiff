@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result name="2022-06-10"
+        xmlns="urn:ietf:params:xml:ns:yang:yin:1">
+  <description>
+    <text> 
+- Changed contact
+      - Added revision '2021-09-16'
+      - Added revision '2021-06-23'
+      - Added revision '2021-03-17'
+      - Added revision '2021-01-28'
+      - Added revision '2021-01-20'
+      - Added typedef authen-change
+      - Changed container aaa
+        - Changed container task-groups
+          - Changed list task-group
+            - Changed description 
+            - Changed container task-group-include-maps
+              - Changed list task-group-include-map
+                - Changed leaf include-task-group-name
+                  - Changed type
+                    - Changed path
+                  - Removed must '(../../../name!=../i...'
+                  - Added must '(../../../name!=curr...'
+        - Changed container user-groups
+          - Changed list user-group
+            - Changed container user-group-include-maps
+              - Changed list user-group-include-map
+                - Changed leaf include-user-group-name
+                  - Changed type
+                    - Changed path
+                  - Removed must '(../../../name!=../i...'
+                  - Added must '(../../../name!=curr...'
+                  - Changed description 
+        - Changed container authentication-schemes
+          - Changed list authentication-scheme
+            - Added leaf authentication-change
+        - Changed container alive-user-qrys
+          - Changed list alive-user-qry
+            - Changed leaf author-method
+              - Changed description 
+        - Changed container global-policy
+          - Changed leaf default-admin-domain
+            - Removed default 'default_admin'
+          - Changed leaf default-access-domain
+            - Removed default 'default1'
+      </text>
+  </description>
+</result>
